@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/arka"
+    tools:context=".Sign2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <EditText
+            android:id="@+id/signup_yer"
+            android:layout_width="6dp"
+            android:layout_height="2dp"
+
+            android:layout_marginTop="40dp"
+            android:drawablePadding="8dp"
+            android:hint=""
+
+            android:padding="8dp"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Adınızı giriniz."
+                android:padding="8dp"
+                android:phoneNumber="false"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signup_email"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Soyadınızı giriniz."
+                android:drawableLeft="@drawable/baseline_person_24"
+
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+
+            <EditText
+                android:id="@+id/signup_kimlik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Kimlik Numaranızı giriniz."
+
+                android:padding="8dp"
+                android:phoneNumber="false"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_dogum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Doğum Yılınızı giriniz. "
+
+                android:padding="8dp"
+                android:phoneNumber="false"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_telefon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_phone_android_24"
+                android:drawablePadding="8dp"
+                android:hint="Telefon Numaranızı giriniz"
+
+                android:padding="8dp"
+                android:phoneNumber="true"
+                android:textColor="@color/black" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signup_anne"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Yakınınızın kimliğini giriniz"
+                android:drawableLeft="@drawable/baseline_person_24"
+
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signup_password"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Şifre belirleyiniz."
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRedirectText"
+                android:text="Zaten bir hesabın var mı? Giriş Yap"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-20dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Kayıt Ol"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/arka"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/kayit_ad"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Adınızı giriniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_soyad"
+        android:layout_width="376dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Soyadınızı giriniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_kimlik"
+        android:layout_width="379dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Kimlik numaranızı giriniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_dogum"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Doğum yılınızı giriniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_telefon"
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_phone_android_24"
+        android:drawablePadding="8dp"
+        android:hint="Telefon numaranızı giriniz."
+        android:padding="8dp"
+        android:phoneNumber="true"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_sifre"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:hint="Şifre belirleyiniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <EditText
+        android:id="@+id/kayit_annetc"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Annenizin kimlik numarasını giriniz."
+        android:padding="8dp"
+        android:textColor="@color/lavender2" />
+
+    <Button
+        android:id="@+id/kayit_buton"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/lavender2"
+        android:text="Kayıt Ol "
+        android:onClick="sendData"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/hesap_acma"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Zaten bir hesabınız var mı?"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
+        
+    
+
+    

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "29385170856",
+    "project_id": "guvendeyiz-6bc2b",
+    "storage_bucket": "guvendeyiz-6bc2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29385170856:android:cf2bf1e16ea66973f7479d",
+        "android_client_info": {
+          "package_name": "com.example.guvende"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTiCyrMux4SZccigYRe7JjmMDN9NRxTq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

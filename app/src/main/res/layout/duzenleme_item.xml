@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_person_24"
+            app:civ_border_color="@color/lavender"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/kimlikbaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Kimlik Numarası"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kimlikad"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-55dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Ad"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/kimlikyer"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-24dp"
+            android:layout_toRightOf="@id/img1"
+            android:hint="Yer Bilgisi Giriniz."
+            android:text="Yer Bilgisi"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/kimliksoyad"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="-54dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Soyad"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

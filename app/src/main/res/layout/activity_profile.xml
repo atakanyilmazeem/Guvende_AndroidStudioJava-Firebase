@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_person_24"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Profilad"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="Ad"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/profileImg"
+        app:layout_constraintStart_toStartOf="@id/profileImg"
+        app:layout_constraintTop_toBottomOf="@id/profileImg" />
+
+    <TextView
+        android:id="@+id/Profilsoyad"
+        android:layout_width="156dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:text="Soyad"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/Profilad"
+        app:layout_constraintStart_toStartOf="@id/Profilad"
+        app:layout_constraintTop_toBottomOf="@id/Profilad" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profilsoyad">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/Profilte"
+                android:layout_width="6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Telefon Numarası :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Profiltel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@color/lavender" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/Profilannet"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Tc :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Profiltc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TC"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@color/lavender" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/dogumyil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doğum Yılı :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Profildogumyili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doğum yılı "
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@color/lavender" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/Profilyerbilgis"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Yer Bilgisi :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Profilyerbilgisi"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Yer Bilgisi"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ProfileditButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+
+        android:text="Yer Bilgisini Güncelle"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".kullanicigiris1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="@color/lavender"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id="@+id/imageSlider"
+                app:iss_period="1000"
+                app:iss_auto_cycle="true"
+                app:iss_delay="1000"
+                app:iss_corner_radius="50"
+                app:iss_title_background="@color/white">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="128dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="29dp"
+
+            android:fontFamily="@font/architects_daughter"
+            android:text="Merhaba,"
+            android:textColor="#8692F7"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="37dp" />
+
+        <Button
+            android:id="@+id/buttoninsanarama"
+            android:layout_width="272dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="500dp"
+            app:iss_corner_radius="100"
+
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="42dp"
+
+            android:text="Yakınından Haber Mi Almak İstiyorsun?"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
